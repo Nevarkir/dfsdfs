@@ -9,9 +9,13 @@ int main()
 {
 	int i;
 	char path[MAXLINE];
+	char *ptr;
 	input (path);
 	printf ("%s", path);
-	char ch = 'h';
-	printf ("%d", schr (path, ch));
+	char ch = '/';
+	printf ("%d", stok (path, ch, *ptr));
+	printf ("\n");
+	printf ("%d", slen (path));
+	printf ("\n");
 	return 0;
 }

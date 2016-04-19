@@ -1,5 +1,5 @@
-laba: laba.o input.o schr.o
-	gcc -o laba laba.o input.o schr.o
+laba: laba.o input.o schr.o slen.o
+	gcc -o laba laba.o input.o schr.o slen.o
 
 laba.o: laba.c
 	gcc -c laba.c
@@ -12,3 +12,6 @@ schr.o: schr.c
 
 stok.o: stok.c
 	gcc -c stok.c
+
+slen.o: slen.c
+	gcc -c slen.c
